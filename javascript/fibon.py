@@ -8,7 +8,9 @@ def fibonacci(n):
     a, b = 0, 1
 
     # Calculate the nth number iteratively
-    # Calculate the nth number iteratively
+    # range method use a start2, and stop value n+1
+    # the way range works is it stops one number short of the stop value
+    # but we want to include the stop value in the iteration so we add 1 to n
     for i in range(2, n + 1):
         a, b = a, a + b
     return b
